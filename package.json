@@ -1,0 +1,23 @@
+{
+  "name": "lovastalalkozo-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "engines": {
+    "node": "6.10.0"
+  },
+  "scripts": {
+    "test": "nodemon server.js"
+  },
+  "author": "Borsodi Dávid",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.16.2",
+    "bcrypt": "^1.0.2",
+    "body-parser": "^1.17.2",
+    "cors": "^2.8.4",
+    "express": "^4.15.4",
+    "mongoose": "^4.11.5",
+    "promise": "^8.0.1"
+  }
+}
