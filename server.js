@@ -12,7 +12,7 @@ let {Candidate} = require('./models/candidate');
 
 
 let app = express();
-const port = process.env.port;
+const port = process.env.PORT || 3000;
 
 app.listen(port, () => {
     console.log(`Started up at port ${port}`);
