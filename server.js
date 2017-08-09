@@ -120,3 +120,12 @@ app.get('/candidates', (req, res) => {
             console.log(error);
         })
 });
+
+app.delete('/candidate/:id', (req, res) => {
+    Candidate.findByIdAndRemove(req.params.id).then((doc) => {
+        res.send(doc);
+    })
+        .catch((error) => {
+            res.status(400).send(message('Hiba lépett fel'));
+        });
+});
