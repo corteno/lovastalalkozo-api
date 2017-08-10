@@ -87,8 +87,7 @@ app.post('/signup', (req, res) => {
         name: req.body.name,
         contact: req.body.contact,
         horsename: req.body.horsename,
-        company: req.body.company,
-        comments: req.body.comments
+        company: req.body.company
     });
 
     Candidate.findOne({contact: candidate.contact}).then((doc) => {

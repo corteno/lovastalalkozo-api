@@ -24,10 +24,6 @@ var Candidate = mongoose.model('Candidate', {
         minlength: 1,
         trim: true,
         required: true
-    },
-    comments: {
-        type: String,
-        trim: true
     }
 });
 
