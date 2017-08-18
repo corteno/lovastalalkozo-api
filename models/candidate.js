@@ -13,7 +13,19 @@ var Candidate = mongoose.model('Candidate', {
         minlength: 1,
         trim: true
     },
+    location: {
+        type: String,
+        required: true,
+        minlength: 1,
+        trim: true
+    },
     horsename: {
+        type: String,
+        minlength: 1,
+        trim: true,
+        required: true
+    },
+    horsetype: {
         type: String,
         minlength: 1,
         trim: true,

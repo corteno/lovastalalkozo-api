@@ -86,7 +86,9 @@ app.post('/signup', (req, res) => {
     let candidate = new Candidate({
         name: req.body.name,
         contact: req.body.contact,
+        location: req.boy.location,
         horsename: req.body.horsename,
+        horsetype: req.body.horsetype,
         company: req.body.company
     });
 
